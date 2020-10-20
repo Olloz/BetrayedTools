@@ -1,0 +1,3 @@
+private.json
+# Project exclude paths
+/venv/
