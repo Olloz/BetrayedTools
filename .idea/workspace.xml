@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce29d342-b074-4884-8e96-c777e0908664" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -40,9 +39,9 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="$PROJECT_DIR$/../OllozBot/bin/python" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
@@ -75,26 +74,35 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="509" y="162" key="Github.UntrackedFilesDialog/0.0.1440.900@0.0.1440.900" timestamp="1603220102254" />
-    <state width="1419" height="245" key="GridCell.Tab.0.bottom" timestamp="1603221097614">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="2539" height="760" key="GridCell.Tab.0.bottom" timestamp="1604326612232">
+      <screen x="0" y="23" width="2560" height="1346" />
     </state>
     <state width="1419" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1603221097614" />
-    <state width="1419" height="245" key="GridCell.Tab.0.center" timestamp="1603221097613">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="2539" height="424" key="GridCell.Tab.0.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1604324341275" />
+    <state width="2539" height="760" key="GridCell.Tab.0.bottom/0.23.2560.1346@0.23.2560.1346" timestamp="1604326612232" />
+    <state width="2539" height="760" key="GridCell.Tab.0.center" timestamp="1604326612231">
+      <screen x="0" y="23" width="2560" height="1346" />
     </state>
     <state width="1419" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1603221097613" />
-    <state width="1419" height="245" key="GridCell.Tab.0.left" timestamp="1603221097612">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="2539" height="424" key="GridCell.Tab.0.center/0.0.2560.1440@0.0.2560.1440" timestamp="1604324341273" />
+    <state width="2539" height="760" key="GridCell.Tab.0.center/0.23.2560.1346@0.23.2560.1346" timestamp="1604326612231" />
+    <state width="2539" height="760" key="GridCell.Tab.0.left" timestamp="1604326612230">
+      <screen x="0" y="23" width="2560" height="1346" />
     </state>
     <state width="1419" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1603221097612" />
-    <state width="1419" height="245" key="GridCell.Tab.0.right" timestamp="1603221097614">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="2539" height="424" key="GridCell.Tab.0.left/0.0.2560.1440@0.0.2560.1440" timestamp="1604324341272" />
+    <state width="2539" height="760" key="GridCell.Tab.0.left/0.23.2560.1346@0.23.2560.1346" timestamp="1604326612230" />
+    <state width="2539" height="760" key="GridCell.Tab.0.right" timestamp="1604326612231">
+      <screen x="0" y="23" width="2560" height="1346" />
     </state>
     <state width="1419" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1603221097614" />
-    <state x="221" y="89" key="SettingsEditor" timestamp="1603220251605">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="2539" height="424" key="GridCell.Tab.0.right/0.0.2560.1440@0.0.2560.1440" timestamp="1604324341274" />
+    <state width="2539" height="760" key="GridCell.Tab.0.right/0.23.2560.1346@0.23.2560.1346" timestamp="1604326612231" />
+    <state x="393" y="142" key="SettingsEditor" timestamp="1604325312649">
+      <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="221" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1603220251605" />
+    <state x="393" y="142" key="SettingsEditor/0.0.2560.1440@0.0.2560.1440" timestamp="1604325312649" />
     <state x="518" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603220163211">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
