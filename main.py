@@ -4,6 +4,7 @@ import time
 
 json_data = open('private.json')
 hypixeldata = json.load(json_data)
+
 def linkeddiscord():
 
     data = requests.get(f'https://api.hypixel.net/guild?key={hypixeldata["hypixelKey"]}&name=Betrayed').json()
