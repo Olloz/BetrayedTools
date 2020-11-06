@@ -21,37 +21,27 @@ def linkeddiscord():
 
 def gexp():
 
-    REQUIREMENT = 10000000000
-    currentTime = int(time.time() * 1000)
-    people = []
-    data = requests.get(
-        f"https://api.hypixel.net/guild?key={hypixeldata['hypixelKey']}&name=Betrayed").json()
-    def getTotal(arr, length):
-        total = 0
-        for i in arr:
-            total += i
-        if len(arr) < length and total < REQUIREMENT:
-            total = -1
-        return total
-    guildMembers = data["guild"]["members"]
-    for guildMember in guildMembers:
-        player = guildMember["uuid"]
-        totalExp = getTotal(guildMember["expHistory"].values(), 7)
-        if totalExp < REQUIREMENT and currentTime - guildMember["joined"] > 691200000:
-            data2 = requests.get(
-                f"https://api.hypixel.net/player?key={hypixeldata['hypixelKey']}&uuid=" + player).json()
-            playerIGN = data2["player"]["displayname"]
-            try:
-                disc = data2["player"]["socialMedia"]["links"]["DISCORD"]
-            except KeyError:
-                disc = ""
-            if disc != "":
-                print("@" + disc)
-            temp = [playerIGN, totalExp]
-            people.append(temp)
-            people.sort(key=lambda x: x[1])
-    for i in people:
-        print(i)
+    data = requests.get(f'https://api.hypixel.net/guild?key={hypixeldata["hypixelKey"]}&name=Betrayed').json()
+    values = sorted([(member["uuid"], total) for member in data["guild"]["members"] if
+                     (total := sum(member["expHistory"].values())) < 30000], key=lambda x: x[1], reverse=True)
+
+    def to_username(uuid):
+        return \
+        requests.get(f"https://api.hypixel.net/player?key={hypixeldata['hypixelKey']}&uuid={uuid}").json()["player"][
+            "displayname"]
+
+    for value in values:
+        player = value[0]
+        username = to_username(value[0])
+        gexp = value[1]
+        data2 = requests.get(f"https://api.hypixel.net/player?key={hypixeldata['hypixelKey']}&uuid={player}").json()
+        if not "player" in data2:
+            print("Error")
+            continue
+        disc = "VERIFICATION REQUIRED"
+        if "socialMedia" in data2['player'] and "DISCORD" in data2["player"]['socialMedia']['links']:
+            disc = data2['player']['socialMedia']['links']['DISCORD']
+        print(f"{username} - {gexp} - {disc}")
 
 script = input("What script would you like to run? ")
 if script == "GEXP":
